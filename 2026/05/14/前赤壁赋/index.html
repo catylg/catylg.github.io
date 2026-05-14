@@ -16,31 +16,27 @@
   <meta name="author" content="Nick">
   <meta name="keywords" content="">
   
-    <meta name="description" content="问题一：获取项名称显示不完整解决方法：修改最大字段长度后重新添加设备  问题二：飞塔防火墙显示SNMP错误解决方法：由于host.php中先要验证sysdesc的信息是否为空，所以需要在飞塔SNMP配置中将描述加上   问题三：导入模板时提示“Error: XML: Hash version does not exist.”解决方法：根据Cacti版本号替换其中的Hash值，例如0021（0.8.">
+    <meta name="description" content="壬戌之秋，七月既望《前赤壁赋》是北宋文学家苏轼的经典之作，创作于元丰五年（1082年）。当时苏轼因”乌台诗案”被贬黄州，在人生最低谷时，他与友人夜游赤壁，感悟人生哲理，写下了这篇传世佳作。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cacti使用问题汇总">
-<meta property="og:url" content="https://yilx.top/2023/04/07/Cacti%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/index.html">
+<meta property="og:title" content="前赤壁赋">
+<meta property="og:url" content="https://yilx.top/2026/05/14/%E5%89%8D%E8%B5%A4%E5%A3%81%E8%B5%8B/index.html">
 <meta property="og:site_name" content="Smart Earth">
-<meta property="og:description" content="问题一：获取项名称显示不完整解决方法：修改最大字段长度后重新添加设备  问题二：飞塔防火墙显示SNMP错误解决方法：由于host.php中先要验证sysdesc的信息是否为空，所以需要在飞塔SNMP配置中将描述加上   问题三：导入模板时提示“Error: XML: Hash version does not exist.”解决方法：根据Cacti版本号替换其中的Hash值，例如0021（0.8.">
+<meta property="og:description" content="壬戌之秋，七月既望《前赤壁赋》是北宋文学家苏轼的经典之作，创作于元丰五年（1082年）。当时苏轼因”乌台诗案”被贬黄州，在人生最低谷时，他与友人夜游赤壁，感悟人生哲理，写下了这篇传世佳作。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yilx.top/img/cactisywthz/%E4%BF%AE%E6%94%B9%E6%9C%80%E5%A4%A7%E5%AD%97%E6%AE%B5%E9%95%BF%E5%BA%A6.png">
-<meta property="og:image" content="https://yilx.top/img/cactisywthz/%E9%AA%8C%E8%AF%81sysdesc%E7%9A%84%E4%BF%A1%E6%81%AF%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA.png">
-<meta property="og:image" content="https://yilx.top/img/cactisywthz/%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BF%B0.png">
-<meta property="og:image" content="https://yilx.top/img/cactisywthz/%E6%94%B9%E6%88%90%E9%9D%9E64%E4%BD%8D.png">
-<meta property="og:image" content="https://yilx.top/img/cactisywthz/%E6%9C%AB%E5%B0%BE%E8%A6%81%E8%A1%A5%E4%B8%8A0.png">
-<meta property="og:image" content="https://yilx.top/img/cactisywthz/%E6%97%A5%E5%BF%97%E6%8A%A5%E9%94%99.png">
-<meta property="article:published_time" content="2023-04-07T10:19:17.000Z">
-<meta property="article:modified_time" content="2025-08-12T06:05:02.117Z">
+<meta property="article:published_time" content="2026-05-14T14:14:28.000Z">
+<meta property="article:modified_time" content="2026-05-14T14:14:38.801Z">
 <meta property="article:author" content="Nick">
-<meta property="article:tag" content="Cacti">
+<meta property="article:tag" content="苏轼">
+<meta property="article:tag" content="古文">
+<meta property="article:tag" content="赤壁赋">
+<meta property="article:tag" content="宋代文学">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yilx.top/img/cactisywthz/%E4%BF%AE%E6%94%B9%E6%9C%80%E5%A4%A7%E5%AD%97%E6%AE%B5%E9%95%BF%E5%BA%A6.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Cacti使用问题汇总 - Smart Earth</title>
+  <title>前赤壁赋 - Smart Earth</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -245,7 +241,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Cacti使用问题汇总"></span>
+            <span id="subtitle" data-typed-text="前赤壁赋"></span>
           
         </div>
 
@@ -256,8 +252,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-07 18:19" pubdate>
-          2023年4月7日 晚上
+        <time datetime="2026-05-14 22:14" pubdate>
+          2026年5月14日 晚上
         </time>
       </span>
     
@@ -268,7 +264,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.3k 字
+          1.3k 字
         
       </span>
     
@@ -279,7 +275,7 @@
         
         
         
-          20 分钟
+          11 分钟
         
       </span>
     
@@ -317,38 +313,55 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Cacti使用问题汇总</h1>
+            <h1 style="display: none">前赤壁赋</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="问题一：获取项名称显示不完整"><a href="#问题一：获取项名称显示不完整" class="headerlink" title="问题一：获取项名称显示不完整"></a>问题一：获取项名称显示不完整</h3><p><strong>解决方法：</strong>修改最大字段长度后重新添加设备</p>
-<p><img src="/img/cactisywthz/%E4%BF%AE%E6%94%B9%E6%9C%80%E5%A4%A7%E5%AD%97%E6%AE%B5%E9%95%BF%E5%BA%A6.png" srcset="/img/loading.gif" lazyload alt="修改最大字段长度"></p>
-<h3 id="问题二：飞塔防火墙显示SNMP错误"><a href="#问题二：飞塔防火墙显示SNMP错误" class="headerlink" title="问题二：飞塔防火墙显示SNMP错误"></a>问题二：飞塔防火墙显示SNMP错误</h3><p><strong>解决方法：</strong>由于host.php中先要验证sysdesc的信息是否为空，所以需要在飞塔SNMP配置中将描述加上</p>
-<p><img src="/img/cactisywthz/%E9%AA%8C%E8%AF%81sysdesc%E7%9A%84%E4%BF%A1%E6%81%AF%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA.png" srcset="/img/loading.gif" lazyload alt="验证sysdesc的信息是否为空"></p>
-<p><img src="/img/cactisywthz/%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BF%B0.png" srcset="/img/loading.gif" lazyload alt="添加描述"></p>
-<h3 id="问题三：导入模板时提示“Error-XML-Hash-version-does-not-exist-”"><a href="#问题三：导入模板时提示“Error-XML-Hash-version-does-not-exist-”" class="headerlink" title="问题三：导入模板时提示“Error: XML: Hash version does not exist.”"></a>问题三：导入模板时提示“<strong>Error: XML: Hash version does not exist</strong>.”</h3><p><strong>解决方法：</strong>根据Cacti版本号替换其中的Hash值，例如0021（0.8.7.g）替换0024(0.8.8.a)</p>
-<p><a target="_blank" rel="noopener" href="https://docs.cacti.net/howto:determine_cacti_template_version">https://docs.cacti.net/howto:determine_cacti_template_version</a></p>
-<h3 id="问题四：深信服SSL-VPN不出图"><a href="#问题四：深信服SSL-VPN不出图" class="headerlink" title="问题四：深信服SSL VPN不出图"></a>问题四：深信服SSL VPN不出图</h3><p><strong>解决方法：</strong>接口不出图，默认接口SNMP 流量64位 OID不匹配，改成非64位</p>
-<p><img src="/img/cactisywthz/%E6%94%B9%E6%88%90%E9%9D%9E64%E4%BD%8D.png" srcset="/img/loading.gif" lazyload alt="改成非64位"></p>
-<h3 id="问题五：CPU、vpn用户数不出图"><a href="#问题五：CPU、vpn用户数不出图" class="headerlink" title="问题五：CPU、vpn用户数不出图"></a>问题五：CPU、vpn用户数不出图</h3><p><strong>解决方法：</strong>OID要完整，末尾要补上0</p>
-<p><img src="/img/cactisywthz/%E6%9C%AB%E5%B0%BE%E8%A6%81%E8%A1%A5%E4%B8%8A0.png" srcset="/img/loading.gif" lazyload alt="末尾要补上0"></p>
-<h3 id="问题六：锐捷防火墙oid"><a href="#问题六：锐捷防火墙oid" class="headerlink" title="问题六：锐捷防火墙oid"></a>问题六：锐捷防火墙oid</h3><ul>
-<li>多个CPU的总利用率 SysCpuUsage.0 .1.3.6.1.4.1.4881.101.4.1.3.0 1-100（%） 60秒</li>
-<li>并发连接数 SysSesCount.0 .1.3.6.1.4.1.4881.101.4.1.8.0 数字 10秒</li>
-<li>内存利用率 SysMemUsage.0 .1.3.6.1.4.1.4881.101.4.1.4.0 1-100（%） 60秒</li>
+                <h2 id="壬戌之秋，七月既望"><a href="#壬戌之秋，七月既望" class="headerlink" title="壬戌之秋，七月既望"></a>壬戌之秋，七月既望</h2><p>《前赤壁赋》是北宋文学家苏轼的经典之作，创作于元丰五年（1082年）。当时苏轼因”乌台诗案”被贬黄州，在人生最低谷时，他与友人夜游赤壁，感悟人生哲理，写下了这篇传世佳作。</p>
+<span id="more"></span>
+
+<h2 id="原文"><a href="#原文" class="headerlink" title="原文"></a>原文</h2><p><strong>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。</strong></p>
+<p>清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上，徘徊于斗牛之间。白露横江，水光接天。纵一苇之所如，凌万顷之茫然。浩浩乎如冯虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。</p>
+<p>于是饮酒乐甚，扣舷而歌之。歌曰：”桂棹兮兰桨，击空明兮溯流光。渺渺兮予怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕，如泣如诉；余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。</p>
+<p>苏子愀然，正襟危坐，而问客曰：”何为其然也？”客曰：”‘月明星稀，乌鹊南飞’，此非曹孟德之诗乎？西望夏口，东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江，横槊赋诗，固一世之雄也，而今安在哉？况吾与子渔樵于江渚之上，侣鱼虾而友麋鹿，驾一叶之扁舟，举匏樽以相属。寄蜉蝣于天地，渺沧海之一粟。哀吾生之须臾，羡长江之无穷。挟飞仙以遨游，抱明月而长终。知不可乎骤得，托遗响于悲风。”</p>
+<p>苏子曰：”客亦知夫水与月乎？逝者如斯，而未尝往也；盈虚者如彼，而卒莫消长也。盖将自其变者而观之，则天地曾不能以一瞬；自其不变者而观之，则物与我皆无尽也，而又何羡乎！且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共适。”</p>
+<p>客喜而笑，洗盏更酌。肴核既尽，杯盘狼籍。相与枕藉乎舟中，不知东方之既白。</p>
+<h2 id="赏析"><a href="#赏析" class="headerlink" title="赏析"></a>赏析</h2><h3 id="艺术特色"><a href="#艺术特色" class="headerlink" title="艺术特色"></a>艺术特色</h3><ol>
+<li><strong>情景交融</strong>：文章将月夜泛舟的美景与人生哲理完美融合</li>
+<li><strong>主客对话</strong>：通过”苏子”与”客”的对话，展现作者思想的变化过程</li>
+<li><strong>哲理深刻</strong>：从”变”与”不变”的辩证角度，阐述对宇宙和人生的理解</li>
+<li><strong>语言优美</strong>：骈散结合，音韵和谐，极具音乐美</li>
+</ol>
+<h3 id="核心思想"><a href="#核心思想" class="headerlink" title="核心思想"></a>核心思想</h3><p>苏轼在文中表达了旷达乐观的人生态度：</p>
+<ul>
+<li><strong>变与不变的辩证</strong>：从变化的角度看，天地万物瞬间都在变化；从不变的角度看，万物与人类都是永恒的</li>
+<li><strong>知足常乐</strong>：天地间的清风明月，取之不尽，用之不竭，是造物者无尽的宝藏</li>
+<li><strong>超然物外</strong>：不必羡慕外物，应珍惜当下所拥有的</li>
 </ul>
-<h3 id="问题七：不出图，日志报错："><a href="#问题七：不出图，日志报错：" class="headerlink" title="问题七：不出图，日志报错："></a>问题七：不出图，日志报错：</h3><p><img src="/img/cactisywthz/%E6%97%A5%E5%BF%97%E6%8A%A5%E9%94%99.png" srcset="/img/loading.gif" lazyload alt="日志报错"></p>
-<p><strong>解决办法：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs mysql">mysql cacti<br>mysql&gt; repair table poller_item;<br>mysql&gt; repair table poller_output;<br>mysql&gt; repair table syslog_statistics;<br></code></pre></td></tr></table></figure>
+<h3 id="历史背景"><a href="#历史背景" class="headerlink" title="历史背景"></a>历史背景</h3><p>元丰三年（1080年），苏轼因”乌台诗案”被贬为黄州团练副使。在黄州期间，他写下了”一词二赋”（《念奴娇·赤壁怀古》《前赤壁赋》《后赤壁赋》），这是中国文学史上的巅峰之作。</p>
+<h2 id="名句摘录"><a href="#名句摘录" class="headerlink" title="名句摘录"></a>名句摘录</h2><blockquote>
+<p>清风徐来，水波不兴。</p>
+</blockquote>
+<blockquote>
+<p>白露横江，水光接天。</p>
+</blockquote>
+<blockquote>
+<p>纵一苇之所如，凌万顷之茫然。</p>
+</blockquote>
+<blockquote>
+<p>浩浩乎如冯虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。</p>
+</blockquote>
+<blockquote>
+<p>寄蜉蝣于天地，渺沧海之一粟。</p>
+</blockquote>
+<blockquote>
+<p>惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。</p>
+</blockquote>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>《前赤壁赋》不仅是宋代散文的巅峰之作，更是中国文学史上哲理与美感并重的典范。苏轼在人生低谷时仍能保持旷达乐观的心态，这种精神境界值得我们学习。</p>
+<hr>
+<p><em>如果你喜欢这篇文章，欢迎阅读我的另一篇文章：《<a href="/2023/03/16/%E5%BF%B5%E5%A5%B4%E5%A8%87-%E8%B5%A4%E5%A3%81%E6%80%80%E5%8F%A4/">念奴娇·赤壁怀古</a>》</em></p>
 
-<h3 id="问题八：服务器重启后不出图"><a href="#问题八：服务器重启后不出图" class="headerlink" title="问题八：服务器重启后不出图"></a>问题八：服务器重启后不出图</h3><p><strong>解决方法：</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">/usr/bin/php /var/www/html/poller.php<br></code></pre></td></tr></table></figure>
-
-<h3 id="问题九：图形无法放大，无法时间筛选"><a href="#问题九：图形无法放大，无法时间筛选" class="headerlink" title="问题九：图形无法放大，无法时间筛选"></a>问题九：图形无法放大，无法时间筛选</h3><p><strong>解决方法：</strong>早期版本开发时相关代码中加入了Unix时间戳，筛选时间必须在北京时间2020年9月12日20点26分40秒前(时间戳1600000000)。改大相关代码中的此时间戳，Cacti根目录下的graph_image.php文件和graph_xport.php文件</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">/* override: graph start time (unix time) */</span><br><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_start&quot;</span>]) &amp;&amp; <span class="hljs-title function_ invoke__">is_numeric</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_start&quot;</span>]) &amp;&amp; <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_start&quot;</span>] &lt; <span class="hljs-number">1600000000</span>) &#123;<br>    <span class="hljs-variable">$graph_data_array</span>[<span class="hljs-string">&quot;graph_start&quot;</span>] = <span class="hljs-title function_ invoke__">get_request_var</span>(<span class="hljs-string">&quot;graph_start&quot;</span>);<br>&#125;<br><span class="hljs-comment">/* override: graph end time (unix time) */</span><br><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>]) &amp;&amp; <span class="hljs-title function_ invoke__">is_numeric</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>]) &amp;&amp; <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>] &lt; <span class="hljs-number">1600000000</span>) &#123;<br>    <span class="hljs-variable">$graph_data_array</span>[<span class="hljs-string">&quot;graph_end&quot;</span>] = <span class="hljs-title function_ invoke__">get_request_var</span>(<span class="hljs-string">&quot;graph_end&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">/* override: graph end time (unix time) */</span><br><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>]) &amp;&amp; <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>] &lt; <span class="hljs-number">1600000000</span>) &#123;<br>    <span class="hljs-variable">$graph_data_array</span>[<span class="hljs-string">&quot;graph_end&quot;</span>] = <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>];<br>&#125;<br><br><span class="hljs-comment">/* override: graph height (in pixels) */</span><br><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_height&quot;</span>]) &amp;&amp; <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_height&quot;</span>] &lt; <span class="hljs-number">3000</span>) &#123;<br>    <span class="hljs-variable">$graph_data_array</span>[<span class="hljs-string">&quot;graph_height&quot;</span>] = <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_height&quot;</span>];<br>&#125;<span class="hljs-comment">/* override: graph end time (unix time) */</span><br><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>]) &amp;&amp; <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>] &lt; <span class="hljs-number">1600000000</span>) &#123;<br>    <span class="hljs-variable">$graph_data_array</span>[<span class="hljs-string">&quot;graph_end&quot;</span>] = <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_end&quot;</span>];<br>&#125;<br><br><span class="hljs-comment">/* override: graph height (in pixels) */</span><br><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_height&quot;</span>]) &amp;&amp; <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_height&quot;</span>] &lt; <span class="hljs-number">3000</span>) &#123;<br>    <span class="hljs-variable">$graph_data_array</span>[<span class="hljs-string">&quot;graph_height&quot;</span>] = <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&quot;graph_height&quot;</span>];<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -366,7 +379,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  <a href="/categories/%E6%96%87%E5%AD%A6%E8%B5%8F%E6%9E%90/" class="category-chain-item">文学赏析</a>
   
   
 
@@ -381,7 +394,13 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Cacti/">#Cacti</a>
+        <a href="/tags/%E8%8B%8F%E8%BD%BC/">#苏轼</a>
+      
+        <a href="/tags/%E5%8F%A4%E6%96%87/">#古文</a>
+      
+        <a href="/tags/%E8%B5%A4%E5%A3%81%E8%B5%8B/">#赤壁赋</a>
+      
+        <a href="/tags/%E5%AE%8B%E4%BB%A3%E6%96%87%E5%AD%A6/">#宋代文学</a>
       
     </div>
   
@@ -393,8 +412,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Cacti使用问题汇总</div>
-      <div>https://yilx.top/2023/04/07/Cacti使用问题汇总/</div>
+      <div>前赤壁赋</div>
+      <div>https://yilx.top/2026/05/14/前赤壁赋/</div>
     </div>
     <div class="license-meta">
       
@@ -406,7 +425,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月7日</div>
+          <div>2026年5月14日</div>
         </div>
       
       
@@ -438,18 +457,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/08/11/%E6%B0%B4%E8%B0%83%E6%AD%8C%E5%A4%B4-%E6%98%8E%E6%9C%88%E5%87%A0%E6%97%B6%E6%9C%89/" title="水调歌头 明月几时有">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">水调歌头 明月几时有</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/04/07/%E5%BF%B5%E5%A5%B4%E5%A8%87%20%E8%B5%A4%E5%A3%81%E6%80%80%E5%8F%A4/" title="念奴娇 赤壁怀古">
-                        <span class="hidden-mobile">念奴娇 赤壁怀古</span>
+                      <a href="/2025/08/11/%E6%B0%B4%E8%B0%83%E6%AD%8C%E5%A4%B4-%E6%98%8E%E6%9C%88%E5%87%A0%E6%97%B6%E6%9C%89/" title="水调歌头 明月几时有">
+                        <span class="hidden-mobile">水调歌头 明月几时有</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
